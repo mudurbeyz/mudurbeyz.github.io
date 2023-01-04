@@ -1,0 +1,268 @@
+
+
+
+.navbar{
+	background-color: 0;
+    font-weight: bold;
+    color: rgb(87, 68, 68);
+    transition: all 0.25s linear;
+}
+#navbarResponsive ul li:hover a{
+    scale: 1.1;
+    transition: all 0.25s linear;
+}
+
+body {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../Document/background5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 3%;
+  }
+
+
+#box{
+    width: 60%;
+    padding-top: 3%;
+}
+
+
+
+#radios label {
+	cursor: pointer;
+	position: relative;
+}
+#radios label + label {
+	margin-left: 15px;
+}
+#radios input[type="radio"] {
+	opacity: 0; /* hidden but still tabable */
+	position: absolute;
+}
+#radios input[type="radio"] + span {
+	font-family: 'Material Icons';
+	color: rgb(87, 68, 68);
+	border-radius: 50%;
+	padding: 12px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+    font-size: 50px;
+}
+#radios input[type="radio"]:checked + span {
+	color: #ffffff;
+    background-color: rgb(87, 68, 68);
+}
+#radios input[type="radio"]:focus + span {
+	color: #fff;
+}
+#radios label:hover::before {
+	content: attr(for);
+	font-family: Roboto, -apple-system, sans-serif;
+	text-transform: capitalize;
+	font-size: 15px;
+	position: absolute;
+	top: 140%;
+	left: 0;
+	right: 0;
+    font-weight: 600;
+	opacity: 0.50;
+	background-color: #ffffff;
+	color: rgb(87, 68, 68);
+	padding: 4px;
+	border-radius: 3px;
+    display: block;
+}
+#radios {
+	text-align: center;
+    width: 65%;;
+}
+
+
+
+
+.slider-ui {
+	position: relative;
+	width: 500px;
+	height: 50px;
+	margin: 50px 0 60px 0;
+}
+.slider-ui input {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+    left: 0;
+	bottom: 0;
+	width: 100%;
+	cursor: pointer;
+	opacity: 0;
+}
+.slider-ui .bar {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgb(87, 68, 68);
+	border-radius: 50px;
+	box-shadow: 0 5px 0 rgba(0,0,0,.1);
+}
+.slider-ui .yazi{
+    position: absolute;
+    z-index: 3;
+    top: 25%;
+    left: 20%;
+    color: #fff;
+    font-weight: 700;
+}
+.slider-ui .min,
+.slider-ui .max {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 14px;
+	font-weight: 800;
+	color: #fff;
+}
+.slider-ui .min {
+	left: 2%;
+}
+.slider-ui .max {
+	right: 2%;
+}
+.slider-ui .track {
+	position: absolute;
+	z-index: 3;
+	left: 25px;
+	right: 25px;
+	top: 0;
+	bottom: 0;
+}
+.slider-ui .value {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 800;
+	color: rgb(87, 68, 68);
+	background-color: #fff;
+	border: 4px solid rgb(87, 68, 68);;
+	border-radius: 100%;
+	box-sizing: border-box;
+	transform: translateX(-50%);
+	transition: top .3s ease-in-out, color .3s ease-in-out;
+}
+.slider-ui .value.up {
+	top: -110%;
+	color: rgb(87, 68, 68);
+}
+.slider-ui .bar {
+	background-color:rgb(87, 68, 68);
+}
+.slider-ui .value {
+	border-color:rgb(87, 68, 68);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list {
+	flex: 0 0 20rem;
+    justify-content: center;
+	align-items: center;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.list__item {
+	position: relative;
+}
+.list__item:hover > .label {
+	color: rgb(87, 68, 68);
+}
+.list__item:hover > .label::before {
+	border: 0.5rem solid rgb(87, 68, 68);
+	margin-right: 2rem;
+}
+
+
+.radio-btn {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+}
+.radio-btn:checked + .label {
+	color: rgb(87, 68, 68);
+}
+.radio-btn:checked + .label::before {
+	margin-right: 2rem;
+	border: 0.5rem solid rgb(87, 68, 68);
+	background: rgb(87, 68, 68);
+}
+
+
+.label {
+	display: flex;
+	align-items: center;
+	padding: 0.75rem 0;
+	color: rgb(87, 68, 68);
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.25s linear;
+}
+
+.label::before {
+	display: inline-block;
+	content: "";
+	height: 1.125rem;
+	width: 1.125rem;
+	margin-right: 0.625rem;
+	border: 0.5rem solid rgb(87, 68, 68);
+	border-radius: 50%;
+	transition: all 0.25s linear;
+}
+
+
+
+#hesaplama{
+    background-color: rgb(87, 68, 68);
+    border: 0;
+    padding: 1% 3%;
+    border-radius: 3%;
+    color: #fff;
+    font-size: 120%;
+    margin: 3% 0;
+    width: 20%;
+}
+#sonuc{
+    width: 20%;
+    border: 0;
+    padding: 1% 3%;
+    border-radius: 2%;
+    color: rgb(87, 68, 68);
+    font-weight: 700;
+    font-size: 130%;
+    text-align: center;
+	background-color: rgba(255, 255, 255, 0);
+}
