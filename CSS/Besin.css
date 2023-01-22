@@ -3,7 +3,6 @@
     font-weight: bold;
     color: rgb(87, 68, 68);
     transition: all 0.25s linear;
-    background-color:0;
 }
 #navbarResponsive ul li:hover a{
     scale: 1.1;
